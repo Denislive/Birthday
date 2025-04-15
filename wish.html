@@ -123,6 +123,13 @@
       opacity: 0.8;
       animation: moveStar 10s infinite;
     }
+
+    @keyframes fadeIn {
+  0% { opacity: 0.4; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1.05); }
+}
+
+
     @keyframes moveStar {
       0% {
         transform: translateY(-100px) translateX(0);
@@ -136,24 +143,12 @@
 
 <body>
 
-<div id="ll">
-  <div class="loader">
-    <svg viewBox="0 0 80 80">
-      <circle cx="40" cy="40" r="32"></circle>
-    </svg>
+  <div id="ll">
+    <div style="text-align: center; font-size: 2em; color: #ff4081; animation: fadeIn 2s ease-in-out infinite alternate;">
+      🎉 Happy Birthday to You! 🎉
+    </div>
   </div>
-  <div class="loader triangle">
-    <svg viewBox="0 0 86 80">
-      <polygon points="43 8 79 72 7 72"></polygon>
-    </svg>
-  </div>
-  <div class="loader">
-    <svg viewBox="0 0 80 80">
-      <rect x="8" y="8" width="64" height="64"></rect>
-    </svg>
-  </div>
-</div>
-
+  
 <div id="home" class="home-style-2 slider-area">
 
   <div class="image-container text-center">
